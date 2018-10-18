@@ -104,6 +104,6 @@ app.get('*', (req, res) => {
 });
 
 // Listening to port
-app.listen(env.port, () => {
-	console.log('serving on server:' + env.port);
+app.listen(process.env.PORT || env.port, () => {
+	console.log('serving on server:' + process.env.PORT || env.port);
 });
