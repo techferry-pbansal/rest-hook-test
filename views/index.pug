@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		title RHT
+
+		link(rel="stylesheet", href="styles/main.css")
+
+	body
+		.box
+			h1 REST Hook Test
+
+			.buttons
+				span(class="button-box")
+					form(action="/lead-trigger" method="post")
+						button(type="submit" id="send-lead") Send Lead
+				span(class="button-box")
+					form(action="/contact-trigger" method="post")
+						button(type="submit" id="send-contact") Send Contact
+
+
+		script(src="scripts/main.js")
